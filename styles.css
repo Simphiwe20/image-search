@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #384848;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.hor-center {
+    justify-content: center;
+}
+
+.center-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.gap-1 {
+    gap: 1.5rem;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
+    color: grey
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.column-dir {
+    flex-direction: column;
+}
+
+/* img {
+    width: 100%;
+    height: 300px
+} */
+
+form {
+    margin-bottom: 30px;
+}
+
+.width-95 {
+    width: 95%;
+}
+
+.result {
+    height: calc(100vh - 350px);
+    width: 30%;
+    background-color: lightcyan;
+}
+
+.result img {
+    height: 80%;
+    width: 90%;
+    object-fit: cover;
+    transition:  opacity 0.2s ease-in-out;
+}
+
+.result:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.result a {
+    text-decoration: none;
+    color: #080808;
+}
+
+.search-input {
+    width: 50%;
+    min-width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px lightgrey;
+    border: none;
+    border: 2px solid grey ;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-right: 15px;
+    outline: none;
+}
+
+.show-more-btn {
+    padding: 10px 30px;
+    margin: 20px 0 20px 0;
+    border-radius: 10px;
+    border: none;
+    border: 2px solid grey;
+    font-size: large;
+    display: none;
+}
+
+.show-more-btn:hover {
+    cursor: pointer;
+    
+}
+
+.btn {
+    height: 40px;
+    width: 100px;
+    border-radius: 12px;
+    border: none;
+    border: 2px solid grey;
+    font-size: large;
+    color: black;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 540px) {
+    .results {
+        flex-direction: column;
+    }
+    .result {
+        width: 100%;
+    }
+
+    h1 {
+        font-size:x-large;
+    }
+    form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .search-input {
+        width: 300px;
+        min-width: 100px;
+    }
+}
